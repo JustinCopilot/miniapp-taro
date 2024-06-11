@@ -1,4 +1,4 @@
-import { View, Text } from '@tarojs/components'
+import { View, Text, Navigator } from '@tarojs/components'
 import { useLoad } from '@tarojs/taro'
 import './index.less'
 
@@ -11,6 +11,7 @@ export default function Index() {
   return (
     <View className='index'>
       <Text>Hello world!</Text>
+      <Navigator url='/xiao-c/sub-packages/pages/foo/index'>测试跳转xiao-c/pages/foo/index</Navigator>
     </View>
   )
 }
