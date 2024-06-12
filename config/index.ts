@@ -22,6 +22,10 @@ export default defineConfig(async (merge, { command, mode }) => {
     },
     copy: {
       patterns: [
+        {
+          from: 'src/xiao-c',
+          to: 'dist/xiao-c'
+        }
       ],
       options: {
       }
