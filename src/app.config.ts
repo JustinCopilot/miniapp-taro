@@ -4,7 +4,7 @@ export default defineAppConfig({
   ],
   "subPackages": [
     {
-      "root": "xiao-c/sub-ai-main",
+      "root": "xiao-c/plugin",
       "pages": [
         "pages/foo/index"
       ]
