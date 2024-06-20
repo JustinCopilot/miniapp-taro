@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <View className='index'>
       <Text>Hello world!</Text>
-      <Navigator url='/xiao-c/plugin/pages/foo/index'>测试跳转xiao-c/pages/foo/index</Navigator>
+      <Navigator url='/xiao-c/plugin/pages/list/list?mockFlag=Y'>测试跳转插件列表</Navigator>
     </View>
   )
 }

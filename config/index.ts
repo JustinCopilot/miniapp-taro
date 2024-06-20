@@ -1,4 +1,5 @@
 import { defineConfig, type UserConfigExport } from '@tarojs/cli'
+import path from 'path';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
 import devConfig from './dev'
 import prodConfig from './prod'
@@ -17,15 +18,13 @@ export default defineConfig(async (merge, { command, mode }) => {
     },
     sourceRoot: 'src',
     outputRoot: 'dist',
-    plugins: [],
+    plugins: [
+      path.join(process.cwd(), '/plugins/move-dist-to-host-miniapp.js'), // 移动构建产物到宿主小程序
+    ],
     defineConstants: {
     },
     copy: {
       patterns: [
-        {
-          from: 'src/xiao-c',
-          to: 'dist/xiao-c'
-        }
       ],
       options: {
       }
